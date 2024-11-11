@@ -1,0 +1,7 @@
+CREATE TABLE prestamos_usuarios (
+    ID_Relacion INT PRIMARY KEY AUTO_INCREMENT,
+    ID_Prestamo INT NOT NULL,
+    ID_Usuario INT NOT NULL,
+    FOREIGN KEY (ID_Prestamo) REFERENCES Prestamos(ID_Prestamo),
+    FOREIGN KEY (ID_Usuario) REFERENCES Usuarios(ID_Usuario)
+);
